@@ -1,0 +1,96 @@
+.search-input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-button:hover {
+  background-color: #005bb5;
+}
+
+.dropdown-modal {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+}
+
+.suggestion-item {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover,
+.suggestion-item.active {
+  background-color: #f0f0f0;
+}
+
+.no-suggestions {
+  padding: 0.5rem 0;
+  color: #999;
+}
+
+.submit-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.submit-button:hover {
+  background-color: #1e7e34;
+}
+
+/* Highlight matched text */
+.highlight {
+  background-color: yellow;
+}
+
+/* Visually hidden class for accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
